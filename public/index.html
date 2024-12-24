@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Download TikTok Videos without watermark - Free, Fast, and Easy!">
+    <meta name="keywords" content="TikTok downloader, no watermark, video download, TikTok tools">
+    <meta name="author" content="Carlos Zalazar (zalazarc20)">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Downloader Pro - Download Videos Without Watermark</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <i class='bx bxl-tiktok'></i>
+                <h1>TikTok Downloader Pro</h1>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <i class='bx bx-moon'></i>
+            </button>
+        </div>
+    </header>
+
+    <main id="app" class="container">
+        <div class="card main-card">
+            <h2>Download TikTok Videos <b>Without Watermark</b></h2>
+            <form id="form" class="download-form">
+                <div class="input-group">
+                    <input type="url" name="url" id="url" placeholder="Paste TikTok video link here..." required>
+                    <button type="button" id="paste-btn" class="btn-icon" aria-label="Paste from clipboard">
+                        <i class='bx bx-paste'></i>
+                    </button>
+                </div>
+                <button type="submit" id="submit" class="btn-submit">
+                    <span class="btn-text">Download</span>
+                    <div class="loader"></div>
+                </button>
+            </form>
+
+            <div id="result" class="result-container hidden">
+                <div class="video-preview">
+                    <video id="preview-video" controls></video>
+                </div>
+                <div class="download-options">
+                    <button id="download-no-wm" class="btn-download">
+                        <i class='bx bx-download'></i>
+                        Download Without Watermark
+                    </button>
+                    <button id="download-with-wm" class="btn-download secondary">
+                        <i class='bx bx-download'></i>
+                        Download With Watermark
+                    </button>
+                    <button id="copy-link" class="btn-copy">
+                        <i class='bx bx-copy'></i>
+                        Copy Download Link
+                    </button>
+                </div>
+            </div>
+
+            <div id="content" class="content">
+                <div class="instructions">
+                    <h3>How to Download</h3>
+                    <ol>
+                        <li>Copy the link of any TikTok video</li>
+                        <li>Paste the link in the input box above</li>
+                        <li>Click the <b>Download</b> button</li>
+                        <li>Choose your preferred download option</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="card history-card">
+            <h3>
+                <i class='bx bx-history'></i>
+                Download History
+            </h3>
+            <div id="history-list" class="history-list">
+                <div class="history-empty">
+                    <i class='bx bx-download'></i>
+                    <p>No downloads yet</p>
+                    <small>Your download history will appear here</small>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="creator">
+                <a class="btn-instagram" href="https://www.instagram.com/zalazarc20/" target="_blank">
+                    <h3>Created by <b>Papers Kingdom</b></h3>
+                </a>
+            </div>
+            <center>
+                <img src="./img/papers_kingdom.png" alt="Papers Kingdom" class="papers-kingdom-logo" />
+            </center>
+            <div class="app-info">
+                <p>Version 1.0.0</p>
+                <p class="disclaimer">This tool is for personal use only</p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <div id="toast" class="toast"></div>
+    <script src="js/theme.js" type="module"></script>
+    <script src="js/app.js" type="module"></script>
+   
+</body>
+
+</html>
